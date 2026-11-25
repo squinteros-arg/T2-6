@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nom i Cognoms de l'Alumne">
+    <title>CSS - Flexbox, Grid i Responsive</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+
+    <div class="app-layout">
+        <!-- 1. Capçalera amb Flexbox -->
+        <header class="topbar">
+            <div class="logo">DAM<span>Panel</span></div>
+            <nav class="nav-links">
+                <a href="#">Projectes</a>
+                <a href="#">Equip</a>
+                <a href="#">Incidències</a>
+            </nav>
+            <button class="btn-perfil">El meu perfil</button>
+        </header>
+
+        <!-- 2. Barra lateral (Sidebar) -->
+        <aside class="sidebar">
+            <h3>Mòduls Actius</h3>
+            <ul>
+                <li>M02 - Bases de Dades</li>
+                <li>M03 - Programació</li>
+                <li>M04 - Llenguatges de Marques</li>
+                <li>M05 - Entorns de Desenvolupament</li>
+            </ul>
+        </aside>
+
+        <!-- 3. Contingut Principal amb CSS Grid -->
+        <main class="main-content">
+            <h1>Estat dels Projectes</h1>
+            
+            <section class="projects-grid">
+                <article class="project-card">
+                    <div class="card-header">
+                        <span class="tag tag-web">Web</span>
+                        <span class="date">Nov 2026</span>
+                    </div>
+                    <h2>Portal Institut</h2>
+                    <p>Maquetació responsive amb CSS Grid i Flexbox per a la web del centre.</p>
+                    <div class="card-footer">
+                        <span>Progrés: 85%</span>
+                        <a href="#">Detalls →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-header">
+                        <span class="tag tag-app">Python</span>
+                        <span class="date">Des 2026</span>
+                    </div>
+                    <h2>Gestor d'Inventari</h2>
+                    <p>Aplicació d'escriptori.</p>
+                    <div class="card-footer">
+                        <span>Progrés: 40%</span>
+                        <a href="#">Detalls →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-header">
+                        <span class="tag tag-xml">XML / RSS</span>
+                        <span class="date">Gen 2027</span>
+                    </div>
+                    <h2>Canal de Notícies</h2>
+                    <p>Generació automàtica de sindicació de continguts amb RSS 2.0 i Atom.</p>
+                    <div class="card-footer">
+                        <span>Progrés: 15%</span>
+                        <a href="#">Detalls →</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- 4. Peu de pàgina -->
+        <footer class="footer">
+            <p>GS Desenvolupament d'Aplicacions Multiplataforma - Mòdul 04</p>
+        </footer>
+    </div>
+
+</body>
+</html>
